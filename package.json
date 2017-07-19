@@ -1,0 +1,29 @@
+{
+  "name": "diegomarcelo",
+  "version": "1.0.0",
+  "description": "WebPage Diego Marcelo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegomcsilva/DiegoMarcelo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegomcsilva/DiegoMarcelo/issues"
+  },
+  "homepage": "https://github.com/diegomcsilva/DiegoMarcelo#readme",
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "nome" : "Diego Marcelo Costa da Silva",
+    "competence": [
+      {
+        "nome": "HTML5",
+        "nivel": "100"
+      },
+      {
+        "nome": "CSS3",
+        "nivel": "85"
+      },
+      {
+        "nome": "JS",
+        "nivel": "65"
+      },
+      {
+        "nome": "jQuery",
+        "nivel": "70"
+      },
+      {
+        "nome": "SASS",
+        "nivel": "75"
+      },
+      {
+        "nome": "React",
+        "nivel": "50"
+      },
+      {
+        "nome": "Angular",
+        "nivel": "65"
+      },
+      {
+        "nome": "PHP",
+        "nivel": "50"
+      },
+      {
+        "nome": "Ionic",
+        "nivel": "50"
+      },
+      {
+        "nome": "GIT",
+        "nivel": "75"
+      },
+      {
+        "nome": "Linux",
+        "nivel": "80"
+      }
+    ],
+    "experience": [
+      {
+      "cargo": "Desenvolvedor Front End Junior",
+      "empresa": "Ventron",
+      "periodo": "dez de 2016 – o momento  Duração do emprego 6 meses",
+      "localidade": "Rio de Janeiro e Região, Brasil",
+      "desc": "Atualmente estou atuando na empresa MEDGRUPO no desenvolvimento de apostilas para aplicativo mobile.",
+      "conhecimentos": "Metodologias Ágeis: Scrum, Kanban, DAKI etc. Angular, Ionic, Gulp, Sass, HTML5, CSS3, Javascript, Git, Metodologia Bem"
+      },
+      {
+      "cargo": "Junior Quality Assurance Analyst Web",
+      "empresa": "Hotel Urbano",
+      "periodo": "abril de 2016 – dezembro de 2016 ( 9 meses )",
+      "localidade": "Rio de Janeiro e Região, Brasil",
+      "desc": "Realização de testes rotineiros e verificações de possíveis bugs ou falhas no website e nos sistemas interno, utilizados pelos funcionários. Também realizo processos que possibilitem gerar relatórios para que erros sejam evitados e propor possíveis soluções e melhorias. Utilizo sistemas como Browserstack, GoogleAnalitycs, Google Tag Manager Graylog, Kibana entre outros que possibilitem maior analise dos sistemas em questão. Faço uso também de analise direto no banco de dados através do MySql, além de verificar informações no Developer tools. Tenho como principal SO o Ubuntu fazendo uso do terminal para diversas tarefas e do GitHub para controle de versão. Obtive um breve conhecimento com de Seleium utilizando o python para o desenvolvimento dos testes, além de utilizar teste do Selenium IDE utilizando o Rundeck para execução dos testes. Obtive um bom desenvolvimento interpessoal pelo fato de ter que lidar diretamente com muitas pessoas e muitos problemas ao mesmo tempo.",
+      "conhecimentos": ""
+      },
+      {
+      "cargo": "Administrative Assistant",
+      "empresa": "Hotel Urbano",
+      "periodo": "abril de 2015 – abril de 2016 ( 10 meses )",
+      "localidade": "Rio de Janeiro e Região, Brasil",
+      "desc": "Minhas responsabilidades estão relacionadas com a parte financeira com a análise de crédito de cliente, onde os mesmo entravam em contato solicitando cancelamento de suas compras, sendo este feito em forma de estorno ou de crédito em nosso site. Realizo também funções relacionadas a casos jurídicos de cancelamentos e análise de mídias como: Facebook, ReclameAqui entre outros. Passei um tempo no setor de contas a pagar auxiliando enquanto outra pessoa estava de ferias, atuando nos processos de pagamento de parceiros por meio do sistema SAP.",
+      "conhecimentos": ""
+      },
+      {
+      "cargo": "Finance Trainee",
+      "empresa": "Hotel Urbano",
+      "periodo": "maio de 2014 – julho de 2015 ( 1 ano e 3 meses )",
+      "localidade": "Rio de Janeiro e Região, Brasil",
+      "desc": "Responsável pelo atendimento as solicitações de cancelamentos, os quais eram realizados para os clientes através do atendimento da central de relacionamento com os clientes. Cancelamentos estes vindo do canal de atendimento da empresa ou de outras mídias sociais.",
+      "conhecimentos": ""
+      }
+    ]
+  }
+]
