@@ -38,6 +38,18 @@ function experiences() {
 }
 
 
-// Chamada para as functions
-competence();
-experiences();
+// function conhecimentos() {
+$(document).ready( function() {
+    $('.learns-flow').slick() ({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+});
+
+$(document).ready( function() {
+    // Chamada para as functions
+    competence();
+    experiences();
+    // conhecimentos();
+});

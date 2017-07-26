@@ -6,6 +6,9 @@
 * {
   margin: 0 auto;
   /*font-family: 'Barrio', cursive;*/
+  img {
+      width: 100%;
+  }
 }
 
 /*Endereço Original da imagem utilizada
@@ -90,6 +93,9 @@ header {
         div {
             text-align: center;
         }
+        img {
+            width: 25%;
+        }
     }
 }
 .social {
@@ -152,68 +158,74 @@ ul {
 }
 }
 
+.about-me {
+    color: #4F4F4F;
+    font-size: 25px;
+    font-family: 'Purple Purse', cursive;
+    font-weight: 600;
+    margin: 50px auto;
+    &__group {
+        float: left;
+        width: 30%;
+        margin: 0 1.6%;
+        &:nth-child(1) {
+            p {
+                margin: 60px auto;
+                width: 75%;
+                &:nth-child(1) {
+                    margin-left: 30%;
+                }
+                &:nth-child(3) {
+                    margin-left: 22%;
+                }
+            }
+        }
+        &:nth-child(3) {
+            p {
+                margin: 60px auto;
+                width: 75%;
+                &:nth-child(1) {
+                    margin-left: -10%;
+                }
+                &:nth-child(2) {
+                    margin-left: 10%;
+                }
+                &:nth-child(3) {
+                    margin-left: 30%;
+                }
+                &:nth-child(5) {
+                    margin-left: -10%;
+                }
+            }
+        }
+    }
+}
 
-  .about {
-    background-color: #ececec;
+
+.learns {
     position: relative;
-    height: 360px;
-    margin-top: 0px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
     width: 90%;
-    display: flex;
-    p {
-      width: 90%;
-      position: absolute;
-    }
-    .show {
-      text-align: center;
-      margin-top: 60px;
-      h1 {
-        font-size: 3em;
-        strong {
-          font-size: 1.3em;
+    background-image: url('../../src/images/MannerConhecimentos.png');
+    &__flow {
+        opacity: 1;
+        width: 200%;
+        transform: translate3d(0px, 0px, 0px);
+        //transform: translate3d(228px, 0px, 0px); Alterar aqui a transição da imagem
+        &-content {
+            float: left;
+            height: 100%;
+            min-height: 1px;
+            width: 187px;
+            img {
+                width: auto;
+            }
         }
-      }
-      h2 {
-        font-size: 2em;
-      }
-      span {
-        &.marca {
-        font-size: 2em;
-        color: #00bcd4;
-        }
-      }
     }
-  }
-
-
-
-  .abouts {
-    /*background-color: #ececec;
-    background-image: url(../../src/images/HTML5_CSS_JavaScript.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30%;*/
-    h1, h2, h3, h4 {
-      display: block;
-    }
-    .about-left {
-      width: 0%;
-      height: 100px;
-      background-color: #ececec;
-      float: left;
-    }
-    .about-right {
-      width: 0%;
-      height: 100px;
-      background-color: #ececec;
-      float: left;
-    }
-    p {
-      width: 90%;
-      position: absolute;
-    }
-  }
-
+}
 
   .competence {
     background-color: rgba(255,255,255,0.8);
