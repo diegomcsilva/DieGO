@@ -14,7 +14,7 @@ function competence() {
       var group="";
       for (i = 0; i < total; i++) {
         console.log(json["0"].competence[i].nome);
-        group +="<div class='learns__flow-content'><img src='https://github.com/diegomcsilva/DieGO/blob/master/src/images/" + json["0"].competence[i].img + ".png' alt='Pote'><span class='textPote'>" + json["0"].competence[i].nome + "</span></div>";
+        group +="<div class='learns__flow-content'><img src='src/images/" + json["0"].competence[i].img + ".png' alt='Pote'><span class='textPote'>" + json["0"].competence[i].nome + "</span></div>";
       }
     $('.learns__flow').html(group);
     competences();
