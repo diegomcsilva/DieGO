@@ -1,30 +1,24 @@
 {
-  "name": "diegomarcelo",
+  "name": "diego",
   "version": "1.0.0",
-  "description": "WebPage Diego Marcelo",
-  "main": "index.js",
+  "description": "WebPage DieGO",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.6.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diegomcsilva/DiegoMarcelo.git"
+    "url": "git+https://github.com/diegomcsilva/DieGO.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/diegomcsilva/DiegoMarcelo/issues"
+    "url": "https://github.com/diegomcsilva/DieGO/issues"
   },
-  "homepage": "https://github.com/diegomcsilva/DiegoMarcelo#readme",
-  "devDependencies": {
-    "gulp-concat": "^2.6.1",
-    "gulp-live-server": "0.0.30",
-    "gulp-sass": "^3.1.0",
-    "gulp-watch": "^4.3.11",
-    "slick": "^1.12.2",
-    "slick-carousel": "^1.6.0",
-  },
-  "dependencies": {
-    "gulp": "^3.9.1"
-  }
+  "homepage": "https://github.com/diegomcsilva/DieGO#readme"
 }

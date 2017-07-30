@@ -1,8 +1,8 @@
-$(document).ready( function() {
-  $(".mais").click(function() {
-      $(this).prev().slideToggle(500);
-  });
-});
+function verMais() {
+    $(".mais").on( "click", function() {
+        $(this).prev(".experience_about").fadeToggle(500);
+    });
+};
 
 //Monta as competencias - para estilizar com core é necessário adicionar a classe no css
 
@@ -24,32 +24,53 @@ function competence() {
 
 function experiences() {
   //O Primeiro é para acesso local
-  // $.getJSON("http://localhost:8000/data.json", function(json) {
-  $.getJSON("https://diegomcsilva.github.io/DiegoMarcelo/data.json", function(json) {
+  $.getJSON("http://localhost:8000/data.json", function(json) {
+  // $.getJSON("https://diegomcsilva.github.io/DiegoMarcelo/data.json", function(json) {
       console.log(json["0"].experience);
       var total = json["0"].experience.length;
       var exp="";
       for (i = 0; i < total; i++) {
-        console.log(json["0"].experience[i].conhecimentos);
-        exp += "<div class='experience_content'><h2>" + json["0"].experience[i].cargo + "</h2><h3>Empresa: <strong>" + json["0"].experience[i].empresa + "</strong></h3><h3>Período: " + json["0"].experience[i].periodo + "</h3><h4>Localidade: " + json["0"].experience[i].localidade + "</h4><div class='experience_about'><p>" + json["0"].experience[i].desc + "</p><p>Conhecimentos: " + json["0"].experience[i].conhecimentos + "</p></div><span class='mais'>Veja Mais</span></div>";
+        //console.log(json["0"].experience[i].conhecimentos);
+        var nomeCargo = "<h2>" + json["0"].experience[i].cargo + "</h2>";
+        var nomeEmpresa = "<h3>Empresa: <strong>" + json["0"].experience[i].empresa + "</strong></h3>";
+        var nomePeriodo = "<h3>Período: " + json["0"].experience[i].periodo + "</h3>";
+        var nomeDesc = "</div><div class='experience_about'><p>" + json["0"].experience[i].desc + "</p>";
+        var nomeExpe = "<p>Conhecimentos: " + json["0"].experience[i].conhecimentos + "</p>";
+        exp += "<div class='experience_content'><div class='experience_content-header'>" + nomeCargo + nomeEmpresa + nomePeriodo + nomeDesc + nomeExpe +"</div><span class='mais'>Veja Mais</span></div>";
       }
     $('#experiences').html(exp);
+    verMais();
   });
 }
 
 
 // function conhecimentos() {
-$(document).ready( function() {
-    $('.learns-flow').slick() ({
+function competences() {
+    $('.learns__flow').slick({
+        slide: '.learns__flow-content',
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrow: true,
+                    dots: false
+                }
+            }
+        ]
     });
-});
+};
+
 
 $(document).ready( function() {
     // Chamada para as functions
     competence();
+    competences();
     experiences();
-    // conhecimentos();
 });
