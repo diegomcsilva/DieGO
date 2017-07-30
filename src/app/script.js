@@ -14,9 +14,10 @@ function competence() {
       var group="";
       for (i = 0; i < total; i++) {
         console.log(json["0"].competence[i].nome);
-        group +="<div class='content'><p>" + json["0"].competence[i].nome + "</p><div class='progress'><div class='" + json["0"].competence[i].nome + "' style='width:" + json["0"].competence[i].nivel + "%;'></div></div></div>";
+        group +="<div class='learns__flow-content'><img src='src/images/" + json["0"].competence[i].img + ".png' alt='Pote'><span class='textPote'>" + json["0"].competence[i].nome + "</span></div>";
       }
-    $('#competence').html(group);
+    $('.learns__flow').html(group);
+    competences();
   });
 }
 
@@ -24,8 +25,8 @@ function competence() {
 
 function experiences() {
   //O Primeiro é para acesso local
-  $.getJSON("http://localhost:8000/data.json", function(json) {
-  // $.getJSON("https://diegomcsilva.github.io/DiegoMarcelo/data.json", function(json) {
+  // $.getJSON("http://localhost:8000/data.json", function(json) {
+  $.getJSON("https://diegomcsilva.github.io/DiegoMarcelo/data.json", function(json) {
       console.log(json["0"].experience);
       var total = json["0"].experience.length;
       var exp="";
@@ -71,6 +72,6 @@ function competences() {
 $(document).ready( function() {
     // Chamada para as functions
     competence();
-    competences();
     experiences();
+    // competences();
 });
