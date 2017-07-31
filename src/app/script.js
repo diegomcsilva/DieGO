@@ -8,7 +8,7 @@ function verMais() {
 
 function competence() {
   // $.getJSON("http://localhost:8000/data.json", function(json) {
-  $.getJSON("https://diegomcsilva.github.io/DiegoMarcelo/data.json", function(json) {
+  $.getJSON("https://diegomcsilva.github.io/DieGO/data.json", function(json) {
       console.log(json["0"].competence);
       var total = json["0"].competence.length;
       var group="";
@@ -26,7 +26,7 @@ function competence() {
 function experiences() {
   //O Primeiro é para acesso local
   // $.getJSON("http://localhost:8000/data.json", function(json) {
-  $.getJSON("https://diegomcsilva.github.io/DiegoMarcelo/data.json", function(json) {
+  $.getJSON("https://diegomcsilva.github.io/DieGO/data.json", function(json) {
       console.log(json["0"].experience);
       var total = json["0"].experience.length;
       var exp="";

@@ -361,13 +361,18 @@ footer {
                 background-size: cover;
                 width: 50px;
                 height: 50px;
+                a {
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                }
                 &.facebook {
                     background-image: url(../../src/images/facebook.png);
                 }
-                &.linkedin {
+                &.github {
                     background-image: url(../../src/images/github-logo.png);
                 }
-                &.github {
+                &.linkedin {
                     background-image: url(../../src/images/linkedin.png);
                 }
             }
