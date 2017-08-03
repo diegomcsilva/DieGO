@@ -74,4 +74,7 @@ $(document).ready( function() {
     competence();
     experiences();
     // competences();
+
+    $("header").load("src/templates/header.html");
+    $("footer").load("src/templates/footer.html");
 });
