@@ -616,3 +616,16 @@ footer {
             }
         }
     }
+
+.learn__more-block {
+    width: 90%;
+    height: 100px;
+    display: inline-block;
+    margin: 0 5%;
+    &-title {
+        text-align: center;
+        margin: 30px;
+        border-bottom: 2px solid black;
+        padding: 5px 0;
+    }
+}
