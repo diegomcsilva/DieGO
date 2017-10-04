@@ -622,7 +622,11 @@ footer {
     height: 100px;
     display: inline-block;
     margin: 0 5%;
-    &-title {
+    text-align: center;
+    &--texto {
+        padding: 10px;
+    }
+    &--title {
         text-align: center;
         margin: 30px;
         border-bottom: 2px solid black;
