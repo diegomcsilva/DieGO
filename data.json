@@ -28,6 +28,14 @@
       }
     ],
     "experience": [
+        {
+        "cargo": "Programador júnior",
+        "empresa": "Profite - Marketing para Comércio Eletrônico",
+        "periodo": "06/2017-Atual",
+        "localidade": "Rio de Janeiro e Região, Brasil",
+        "desc": "Programador Jr - Developer Front End * Desenvolvimento, manutenção e evolução de sites na plataforma VTEX. Lojas: http://www.mercadodasoticas.com.br/Sistema/401 (Home - Modals - Manutenção de algumas telas)",
+        "conhecimentos": "VTEX, jQuery, Javascript, Mobile First, React, Grunt, NodeJS, Sass, Metodologia Bem, HTML5, CSS3, Git, Bitbucket"
+        },
       {
       "cargo": "Desenvolvedor Front End Junior",
       "empresa": "Ventron",

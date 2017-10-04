@@ -316,13 +316,16 @@ footer {
             }
         }
         &_social {
-            background-image: url(../../src/images/block-social.png);
-            background-repeat: no-repeat;
-            background-size: cover;
+            /*background-image: url(../../src/images/block-social.png);*/
+            /*background-repeat: no-repeat;*/
+            /*background-size: cover;*/
             /*background-size: 90%;*/
             height: 110px;
-            margin: 35px 0 15px;
-            width: 90%;
+            /*margin: 35px 0 15px;*/
+            /*width: 90%;*/
+            margin: 35px auto;
+            border: 4px solid #33658a;
+            outline: 6px solid #2f4858;
             ul {
                 list-style: none;
                 display: flex;
@@ -332,14 +335,18 @@ footer {
         }
         &_contato {
             font-family: 'Acme', sans-serif;
-            background-image: url(../../src/images/block-contato.png);
-            background-repeat: no-repeat;
+            /*background-image: url(../../src/images/block-contato.png);*/
+            /*background-repeat: no-repeat;*/
             /*background-size: cover;*/
-            background-size: 100%;
-            height: 90px;
+            /*background-size: 100%;*/
+            /*height: 90px;*/
             width: 90%;
             margin: 0;
             padding: 35px 0px;
+            margin: 35px auto;
+            border: 4px solid #33658a;
+            outline: 6px solid #2f4858;
+            height: 35px;
             a {
                 color: #FFF;
                 &:active {
@@ -349,12 +356,13 @@ footer {
             }
             h3 {
                 width: 80%;
+                font-weight: 100;
             }
         }
     }
     .right {
-        float: right;
-        width: 50%;
+        /*float: right;*/
+        width: 75%;
         ul {
             li {
                 background-repeat: no-repeat;
@@ -418,6 +426,18 @@ footer {
       }
     }
 
+.slick-prev {
+    left: 25px !important;
+    top: 55%;
+}
+.slick-next {
+    right: 25px !important;
+    top: 55%;
+}
+
+.slick-dots li button:before {
+    font-size: 12px !important;
+}
 
 /*Classe de media*/
 
@@ -601,6 +621,10 @@ footer {
 
 
   /*Custton_slick*/
+    .slick-track {
+        display: flex !important;
+        align-items: baseline;
+    }
     .slick-prev {
         &:before {
             background-image: url(../../src/images/Arrow_Left.png);
