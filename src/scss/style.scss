@@ -573,7 +573,7 @@ footer {
     footer {
         .footer {
             width: auto;
-            height: auto;
+            height: 420px;
             &_bar {
                 background-image: url(../../src/images/footer-bar-mobile.png);
                 height: 125px;
@@ -601,14 +601,14 @@ footer {
             &_contato {
                 background-size: contain;
                 margin: 0px auto;
-                padding: 15px 0px;
+                padding: 15px 0px 45px;
                 font-size: 13px;
             }
             .right {
                 float: initial;
                 width: 100%;
                 ul {
-                    padding: 10px;
+                    padding: 30px 0px;
                     li {
                         width: 40px;
                         height: 40px;
