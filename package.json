@@ -5,7 +5,12 @@
   "main": "gulpfile.js",
   "dependencies": {
     "slick": "^1.12.2",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-live-server": "0.0.31",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
   },
   "devDependencies": {},
   "scripts": {
