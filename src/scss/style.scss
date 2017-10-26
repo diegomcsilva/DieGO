@@ -1,3 +1,30 @@
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
 * {
   margin: 0 auto;
   font-family: 'Acme', sans-serif;
@@ -112,15 +139,25 @@ header {
         float: left;
         width: 30%;
         margin: 0 1.6%;
+        img {
+            @include animation('slide-move-1 5s infinite');
+        }
+        p {
+            text-align: center;
+            // @include animation('slide-move-1 5s infinite');
+        }
         &:nth-child(1) {
             p {
                 margin: 0px auto 60px;
                 width: 90%;
+                @include animation('slide-move-1 5s infinite');
                 &:nth-child(1) {
                     margin-left: 30%;
+                    @include animation('slide-move-2 5s infinite');
                 }
                 &:nth-child(3) {
                     margin-left: 22%;
+                    @include animation('slide-move-1 5s infinite');
                 }
             }
         }
@@ -128,17 +165,22 @@ header {
             p {
                 margin: 0px auto 60px;
                 width: 90%;
+                @include animation('slide-move-2 5s infinite');
                 &:nth-child(1) {
                     margin-left: -10%;
+                    @include animation('slide-move-1 5s infinite');
                 }
                 &:nth-child(2) {
                     margin-left: 10%;
+                    @include animation('slide-move-2 5s infinite');
                 }
                 &:nth-child(3) {
                     margin-left: 30%;
+                    @include animation('slide-move-1 5s infinite');
                 }
                 &:nth-child(5) {
                     margin-left: -10%;
+                    @include animation('slide-move-2 5s infinite');
                 }
             }
         }
@@ -656,4 +698,48 @@ footer {
         border-bottom: 2px solid black;
         padding: 5px 0;
     }
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframes(slide-move-1) {
+  0% { margin-left: 10%; }
+  50% { margin-left: 30%; }
+  100% { margin-left: 10%; }
+}
+
+@include keyframes(slide-move-2) {
+  0% { margin-left: 5%; }
+  50% { margin-left: 35%; }
+  100% { margin-left: 5%; }
+}
+
+@include keyframes(slide-move-3) {
+  0% { margin-left: 10%; margin-top: 0%; }
+  50% { margin-left: 30%; margin-top: 100%; }
+  100% { margin-left: 10%; margin-top: 0%;}
 }
